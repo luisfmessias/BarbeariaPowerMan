@@ -93,29 +93,74 @@ nav ul li a:hover {
     color: white;
 }
 
-.conteudo h1{
+.conteudo h1 {
     font-size: 5em;
     font-family: "Playfair Display", serif;
 }
 
-.conteudo p{
+.conteudo p {
     color: rgb(175, 175, 175);
     font-size: 1.7em;
     letter-spacing: 3px;
 }
 
-.botoes{
+.botoes {
     margin-top: 15px;
     padding: 10px 25px;
     font-size: 1.3em;
 }
 
-.btnagendar{
+.btnagendar {
     background-color: var(--red);
     border-radius: 30px;
+    transition: ease 0.25s;
+
 }
 
-.btnservicos{
+.btnservicos {
     border: 1px solid white;
     border-radius: 30px;
+    transition: ease 0.25s;
+}
+
+.btnagendar:hover {
+    transform: scale(0.97);
+}
+
+.btnservicos:hover {
+    transform: scale(0.97);
+}
+
+/*sobre*/
+
+.sobre {
+    color: white;
+    padding: 80px 40px;
+    background: linear-gradient(90deg, #111 0%, #222 100%);
+}
+
+.sobre-content {
+    display: flex;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.barbeiro img {
+    max-width: 400px;
+    border-radius: 40px;
+    border: 2px solid rgb(201, 201, 201);
+}
+
+.texto{
+    flex: 1;
+    min-width: 300px;
+}
+
+.texto h1 {
+    font-size: 3em;
+    font-family: "Playfair Display", serif;
+
 }
