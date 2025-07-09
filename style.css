@@ -77,7 +77,7 @@ nav ul li a:hover {
     left: 0;
     width: 100dvw;
     height: 100dvh;
-    background-image: url('/img/hero_img.webp');
+    background-image: url('img/hero_img.webp');
     background-size: cover;
     background-size: 100vw 150dvh;
     background-repeat: no-repeat;
