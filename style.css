@@ -167,15 +167,16 @@ nav ul li a:hover {
 
 .texto h1 {
     margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 3em;
     font-family: "Playfair Display", serif;
 }
 
-.texto .linha {
+.linha {
     width: 120px;
     height: 3px;
     background-color: var(--red);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .texto p {
@@ -219,4 +220,166 @@ nav ul li a:hover {
 .item p {
     margin: 0;
     color: #aaa;
+}
+
+/* 
+SECTION SERVIÇOS
+*/
+
+.servicos {
+    background-image: linear-gradient(to top, #2E2C2B, #1D1D1D);
+    color: white;
+}
+
+.servicos-content {
+    margin: auto;
+    text-align: center;
+}
+
+.servicos-content h1 {
+    margin-bottom: 15px;
+    font-size: 3em;
+    font-family: "Playfair Display", serif;
+}
+
+.linha-servicos {
+    width: 120px;
+    height: 3px;
+    background-color: var(--red);
+    margin: auto;
+}
+
+.servicos-content p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+    color: #ccc;
+}
+
+.carrosel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #111;
+}
+
+.carrosel-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cortes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/corte-barba.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 30%;
+    z-index: 1;
+}
+
+.nome-servico {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 12px;
+}
+
+.flecha-esquerda,
+.flecha-direita {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.flecha-esquerda {
+    left: 30px;
+}
+
+.flecha-direita {
+    right: 30px;
+}
+
+.flecha-esquerda:hover,
+.flecha-direita:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 
+SECTION GALERIA
+*/
+
+.galeria {
+    background-image: linear-gradient(to top, #2E2C2B, #1D1D1D);
+    color: white;
+}
+
+.galeria-content {
+    margin: auto;
+    text-align: center;
+}
+
+.galeria-content h1 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 3em;
+    font-family: "Playfair Display", serif;
+}
+
+.linha-servicos {
+    width: 120px;
+    height: 3px;
+    background-color: var(--red);
+    margin: auto;
+}
+
+.galeria-content p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+    color: #ccc;
+}
+
+/*grid da galeria*/
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.103);
+    transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.09);
+  border-color: var(--red);
 }
