@@ -687,7 +687,7 @@ SECTION GALERIA
         top: 80px;
         right: 0;
         width: 100%;
-        height: 100dvh;
+        height: 1dvh; /*aqui vai 100dvh*/
         padding: 20px;
     }
 
