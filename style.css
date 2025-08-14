@@ -41,10 +41,16 @@ header {
     height: 100px;
 }
 
-.menu{
+.menu {
     display: none;
     font-size: 30px;
     color: white;
+    transition: 0.3s;
+}
+
+.menu:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 nav .desktop {
@@ -573,7 +579,7 @@ SECTION GALERIA
 .btn-maps {
     background-color: var(--red);
     color: white;
-    padding: 15px 30px;
+    padding: 15px 20px;
     font-size: 1.4em;
     font-weight: bold;
     text-decoration: none;
@@ -679,6 +685,7 @@ SECTION GALERIA
 /*RESPONSIVIDADE*/
 
 @media (max-width: 1024px) {
+
     nav ul {
         display: none;
         flex-direction: column;
@@ -687,11 +694,12 @@ SECTION GALERIA
         top: 80px;
         right: 0;
         width: 100%;
-        height: 1dvh; /*aqui vai 100dvh*/
+        height: 100dvh;
+        /*aqui vai 100dvh*/
         padding: 20px;
     }
 
-    nav ul li{
+    nav ul li {
         margin-bottom: 15px;
     }
 
@@ -704,12 +712,21 @@ SECTION GALERIA
         height: 90px;
     }
 
-    .menu{
+    .menu {
         display: block;
     }
 
-    .mobile{
+    .mobile {
         color: red;
+    }
+
+    .conteudo h1{
+        padding-top: 20px;
+        font-size: 4em;
+    }
+
+    .hero .conteudo br {
+        display: none;
     }
 
     .conteudo p {
@@ -719,7 +736,6 @@ SECTION GALERIA
     }
 
     .botoes {
-
         display: block;
         width: 100%;
         max-width: 250px;
@@ -743,11 +759,15 @@ SECTION GALERIA
         height: 350px;
     }
 
+    .servicos-content h1 {
+        font-size: 1.8em;
+    }
+
     .flecha-esquerda,
     .flecha-direita {
         width: 40px;
         height: 40px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .galeria-grid img[alt="Estilo 2"],
@@ -757,17 +777,29 @@ SECTION GALERIA
 
     .galeria-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
     }
 
     .galeria-grid img {
-        margin-left: 150px;
-        width: auto;
+        width: 100%;
+        max-width: 150px;
         height: auto;
-        /* mantém proporção original */
-        object-fit: contain;
-        /* mostra a imagem inteira */
-        max-height: 250px;
-        /* remove limite de altura */
+        object-fit: cover;
+        margin: 0;
     }
+
+    .menu-desktop {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primeira);
+    }
+
+    .menu-desktop.active {
+        display: flex;
+    }
+
+
+
 
 }
