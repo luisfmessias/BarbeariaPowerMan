@@ -1,3 +1,4 @@
+//menu mobile
 const menuBotao = document.getElementById("mobile-menu-botao");
 const menuDesktop = document.querySelector(".menu-desktop");
 
@@ -13,7 +14,7 @@ menuLinks.forEach(link => {
     });
 });
 
-// fade
+//fade
 const reveals = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver((entries) => {
@@ -24,11 +25,49 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.remove("active");
     }
   });
-}, { threshold: 0.1 }); 
+}, { threshold: 0.2 }); 
 
 reveals.forEach(reveal => {
   observer.observe(reveal);
 });
 
+//carrosel
 
+const servicos = [
+  { nome: "Barba", imagem: "img/corte-barba.jpg" },
+  { nome: "Cabelo", imagem: "img/corte-cabelo.jpg" },
+  { nome: "Sobrancelha", imagem: "img/sobrancelha.jpg" },
+  { nome: "Pezinho", imagem: "img/pezinho.jpg" }
+];
 
+let indiceAtual = 0;
+
+const cortes = document.querySelector(".cortes");
+const nomeServico = document.querySelector(".nome-servico h1");
+const setaEsquerda = document.querySelector(".flecha-esquerda");
+const setaDireita = document.querySelector(".flecha-direita");
+
+function atualizarCarrossel() {
+  cortes.classList.remove("fade-in");
+  void cortes.offsetWidth;
+  cortes.style.backgroundImage = `url('${servicos[indiceAtual].imagem}')`;
+  nomeServico.textContent = servicos[indiceAtual].nome.toUpperCase();
+  cortes.classList.add("fade-in");
+}
+
+function proximoServico() {
+  indiceAtual = (indiceAtual + 1) % servicos.length;
+  atualizarCarrossel();
+}
+
+function anteriorServico() {
+  indiceAtual = (indiceAtual - 1 + servicos.length) % servicos.length;
+  atualizarCarrossel();
+}
+
+setaDireita.addEventListener("click", proximoServico);
+setaEsquerda.addEventListener("click", anteriorServico);
+
+// setInterval(proximoServico, 6000); Caso for usar
+
+atualizarCarrossel();

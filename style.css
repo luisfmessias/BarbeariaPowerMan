@@ -6,6 +6,8 @@
     --primeira: #1D1D1D;
     --segunda: #2E2C2B;
     --red: #DA3D35;
+    --bg1: #151311;
+    --bg2: #1f1b18;
 }
 
 
@@ -18,9 +20,9 @@
 
 html,
 body {
+    background-color: #161413;
     height: 100%;
     overflow-x: hidden;
-    background-color: var(--primeira);
 }
 
 header {
@@ -94,9 +96,10 @@ nav ul li a:hover {
     background-size: cover;
     background-size: 100% 100dvh;
     background-repeat: no-repeat;
-    filter: blur(15px);
-    opacity: 0.35;
+    filter: blur(18px);
+    opacity: 0.4;
     z-index: 1;
+    
 }
 
 .conteudo {
@@ -138,6 +141,7 @@ nav ul li a:hover {
 
 .btnagendar:hover {
     transform: scale(0.97);
+    background-color: #af3832;
 }
 
 .btnservicos:hover {
@@ -147,7 +151,7 @@ nav ul li a:hover {
 /*sobre*/
 
 .sobre {
-    background-image: linear-gradient(to top, #1D1D1D, #2E2C2B);
+    background-image: linear-gradient(var(--bg1), var(--bg2));
     color: white;
     padding: 80px 40px;
 }
@@ -234,7 +238,7 @@ SECTION SERVIÇOS
 */
 
 .servicos {
-    background-image: linear-gradient(to top, #2E2C2B, #1D1D1D);
+    background-image: linear-gradient(var(--bg2), var(--bg1));
     color: white;
 }
 
@@ -335,7 +339,7 @@ SECTION GALERIA
 */
 
 .galeria {
-    background-image: linear-gradient(to top, #2E2C2B, #1D1D1D);
+    background-image: linear-gradient(var(--bg1), var(--bg2));
     color: white;
 }
 
@@ -370,7 +374,7 @@ SECTION GALERIA
 .galeria-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
     max-width: 700px;
     margin: 0 auto;
@@ -383,18 +387,18 @@ SECTION GALERIA
     border: 1px solid #fff;
     border-radius: 4px;
     box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.048);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
 }
 
 .galeria-grid img:hover {
-    transform: scale(1.09);
+    transform: scale(1.04);
 }
 
 
 /* contato*/
 
 .contato {
-    background-image: linear-gradient(to top, #1D1D1D, #2E2C2B);
+    background-image: linear-gradient(var(--bg2), var(--bg1));   
     color: white;
     padding: 80px 40px;
 }
@@ -539,8 +543,8 @@ SECTION GALERIA
 
 /*localização*/
 
-.localizacao {
-    background-image: linear-gradient(to top, #2E2C2B, #1D1D1D);
+.localizacao {  
+    background-color: var(--bg1);  
     color: white;
     padding: 80px 40px;
     text-align: center;
@@ -826,7 +830,7 @@ SECTION GALERIA
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -834,4 +838,19 @@ SECTION GALERIA
 .whatsapp-fixo:hover {
     transform: scale(1.1);
     background-color: #1ebe5b;
+}
+
+.cortes {
+    transition: opacity 0.8s ease-in-out;
+    opacity: 1;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeEffect 0.8s forwards;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
