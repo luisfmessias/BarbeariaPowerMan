@@ -71,3 +71,17 @@ setaEsquerda.addEventListener("click", anteriorServico);
 // setInterval(proximoServico, 6000); Caso for usar
 
 atualizarCarrossel();
+
+// galeria
+const galeriaGrid = document.querySelector(".galeria-grid");
+let imagens = Array.from(galeriaGrid.querySelectorAll("img"));
+
+function rotacionarGaleria() {
+  const ultima = imagens.pop();
+  imagens.unshift(ultima);
+
+  galeriaGrid.innerHTML = "";
+  imagens.forEach(img => galeriaGrid.appendChild(img));
+}
+
+setInterval(rotacionarGaleria, 3000);

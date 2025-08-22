@@ -99,7 +99,7 @@ nav ul li a:hover {
     filter: blur(18px);
     opacity: 0.4;
     z-index: 1;
-    
+
 }
 
 .conteudo {
@@ -341,6 +341,7 @@ SECTION GALERIA
 .galeria {
     background-image: linear-gradient(var(--bg1), var(--bg2));
     color: white;
+
 }
 
 .galeria-content {
@@ -378,6 +379,7 @@ SECTION GALERIA
     justify-content: center;
     max-width: 700px;
     margin: 0 auto;
+
 }
 
 .galeria-grid img {
@@ -388,17 +390,19 @@ SECTION GALERIA
     border-radius: 4px;
     box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.048);
     transition: transform 0.3s;
+
 }
 
 .galeria-grid img:hover {
     transform: scale(1.04);
+
 }
 
 
 /* contato*/
 
 .contato {
-    background-image: linear-gradient(var(--bg2), var(--bg1));   
+    background-image: linear-gradient(var(--bg2), var(--bg1));
     color: white;
     padding: 80px 40px;
 }
@@ -543,8 +547,8 @@ SECTION GALERIA
 
 /*localização*/
 
-.localizacao {  
-    background-color: var(--bg1);  
+.localizacao {
+    background-color: var(--bg1);
     color: white;
     padding: 80px 40px;
     text-align: center;
@@ -765,7 +769,8 @@ SECTION GALERIA
     }
 
     .nome-servico h1 {
-        font-size: 1.8em;
+        font-size: 1em;
+        letter-spacing: 5px;
     }
 
     .flecha-esquerda,
@@ -817,6 +822,29 @@ SECTION GALERIA
     transform: translateY(0);
 }
 
+.para-cima {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 80px;
+    right: 20px;
+    background-color: #272727;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.para-cima:hover {
+    transform: scale(1.1);
+    background-color: #1a1a1a;
+}
+
 .whatsapp-fixo {
     position: fixed;
     width: 45px;
@@ -840,6 +868,8 @@ SECTION GALERIA
     background-color: #1ebe5b;
 }
 
+
+
 .cortes {
     transition: opacity 0.8s ease-in-out;
     opacity: 1;
@@ -851,6 +881,11 @@ SECTION GALERIA
 }
 
 @keyframes fadeEffect {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
