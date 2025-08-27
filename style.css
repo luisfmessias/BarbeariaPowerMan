@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root {
     --preta: #171616;
@@ -8,6 +9,9 @@
     --red: #DA3D35;
     --bg1: #151311;
     --bg2: #1f1b18;
+    --f1poppins: "Poppins", sans-serif;
+    --f2lobster: "Lobster", sans-serif;
+    --f3playfair: "Playfair Display", serif; 
 }
 
 
@@ -15,7 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--f1poppins);
 }
 
 html,
@@ -111,7 +115,8 @@ nav ul li a:hover {
 
 .conteudo h1 {
     font-size: 5em;
-    font-family: "Playfair Display", serif;
+    font-family: var(--f2lobster);
+    letter-spacing: 4px;
 }
 
 .conteudo p {
@@ -180,7 +185,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
     margin-bottom: 15px;
     font-size: 3em;
-    font-family: "Playfair Display", serif;
+    font-family: var(--f3playfair);
 }
 
 .linha {
@@ -250,7 +255,7 @@ SECTION SERVIÇOS
 .servicos-content h1 {
     margin-bottom: 15px;
     font-size: 3em;
-    font-family: "Playfair Display", serif;
+    font-family: var(--f3playfair);
 }
 
 .linha-servicos {
@@ -300,7 +305,7 @@ SECTION SERVIÇOS
     z-index: 2;
     color: white;
     font-size: 25px;
-    font-family: "Playfair Display", serif;
+    font-family: var(--f3playfair);
     letter-spacing: 12px;
 }
 
@@ -353,7 +358,7 @@ SECTION GALERIA
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 3em;
-    font-family: "Playfair Display", serif;
+    font-family: var(--f3playfair);
 }
 
 .linha-servicos {
@@ -415,7 +420,7 @@ SECTION GALERIA
 
 .contato-content h1 {
     font-size: 3em;
-    font-family: "Playfair Display", serif;
+    font-family: var(--f3playfair);
 }
 
 .linha-contato {
@@ -454,7 +459,6 @@ SECTION GALERIA
 .contato-form h2 {
     font-size: 1.6em;
     margin-bottom: 20px;
-    font-family: "Poppins", sans-serif;
 }
 
 .info-item {
@@ -561,7 +565,7 @@ SECTION GALERIA
 
 .localizacao-content h1 {
     font-size: 3em;
-    font-family: "Playfair Display", serif;
+    font-family: var(--f3playfair);
     margin-bottom: 10px;
 }
 
