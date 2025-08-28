@@ -36,7 +36,6 @@ reveals.forEach(reveal => {
 const servicos = [
   { nome: "Barba", imagem: "img/corte-barba.jpg" },
   { nome: "Cabelo", imagem: "img/corte-cabelo.jpg" },
-  { nome: "Sobrancelha", imagem: "img/sobrancelha.jpg" },
   { nome: "Pezinho", imagem: "img/pezinho.jpg" }
 ];
 
