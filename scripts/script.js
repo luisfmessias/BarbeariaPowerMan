@@ -34,9 +34,9 @@ reveals.forEach(reveal => {
 //carrosel
 
 const servicos = [
-  { nome: "Barba", imagem: "img/corte-barba.jpg" },
-  { nome: "Cabelo", imagem: "img/corte-cabelo.jpg" },
-  { nome: "Pezinho", imagem: "img/pezinho.jpg" }
+  { nome: "Barba", imagem: "/img/carrosel/corte-barba.jpg" },
+  { nome: "Cabelo", imagem: "/img/carrosel/corte-cabelo.jpg" },
+  { nome: "Pezinho", imagem: "/img/carrosel/pezinho.jpg" }
 ];
 
 let indiceAtual = 0;
