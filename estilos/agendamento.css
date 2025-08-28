@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --preta: #171616;
+    --primeira: #1D1D1D;
+    --segunda: #2E2C2B;
+    --red: #DA3D35;
+    --bg1: #151311;
+    --bg2: #1f1b18;
+    --f1poppins: "Poppins", sans-serif;
+    --f2lobster: "Lobster", sans-serif;
+    --f3playfair: "Playfair Display", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--f1poppins);
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: linear-gradient(to bottom, #1D1D1D, #2E2C2B);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.conteudo {
+    background-color: #1D1D1D;
+    border-radius: 20px;
+    padding: 0px 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.conteudo h1 {
+    color: white;
+    font-family: var(--f3playfair);
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.linha {
+    width: 120px;
+    height: 3px;
+    background-color: var(--red);
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.nome {
+    color: white;
+    font-size: 0.85em;
+    padding-bottom: 5px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.input-box i {
+    color: #252525;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.input-box input,
+.input-box select {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    background-color: var(--red);
+    border: none;
+    height: 40px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 40px;
+}
+
+.btn:hover {
+    background-color: rgb(196, 40, 40);
+    transform: scale(0.97);
+}
+
+.flatpickr-calendar {
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.flatpickr-day.today {
+    background: rgb(62, 152, 255);
+    color: #fff;
+    border-radius: 6px;
+}
+
+.flatpickr-day.selected {
+    color: black;
+}
+
+@media (max-width: 1024px) {
+
+    .conteudo {
+        padding: 0px 10px;
+    }
+}

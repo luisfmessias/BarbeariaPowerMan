@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento</title>
+  <link rel="stylesheet" href="/estilos/agendamento.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+  <div class="conteudo">
+    <h1>Agendamento</h1>
+    <div class="linha"></div>
+    <form>
+
+      <div class="input-grupo">
+        <p class="nome">Serviço</p>
+        <div class="input-box">
+          <i class="fa-solid fa-scissors"></i>
+          <select id="servico">
+            <option value="" disabled selected>Escolha o serviço desejado</option>
+            <option value="corte">Corte de cabelo</option>
+            <option value="barba">Barba</option>
+            <option value="corte-barba">Corte + Barba</option>
+            <option value="sobrancelha">Sobrancelha</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-grupo">
+        <p class="nome">Profissional</p>
+        <div class="input-box">
+          <i class="fa-solid fa-user"></i>
+          <select id="profissional">
+            <option value="" disabled selected>Selecione o barbeiro</option>
+            <option value="joao">Qualquer Profissional</option>
+            <option value="pedro">Carlos</option>
+            <option value="carlos">Alisson</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-grupo">
+        <p class="nome">Data do agendamento</p>
+        <div class="input-box">
+          <i class="fa-solid fa-calendar"></i>
+          <input type="text" id="data" placeholder="Escolha a data">
+        </div>
+      </div>
+
+      <div class="input-grupo">
+        <p class="nome">Horário</p>
+        <div class="input-box">
+          <i class="fa-solid fa-clock"></i>
+          <input type="text" id="horaAgendamento" placeholder="Selecione o horário">
+        </div>
+      </div>
+
+      <input type="submit" value="Agendar" class="btn">
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="/scripts/agendamento.js"></script>
+</body>
+
+</html>
