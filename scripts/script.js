@@ -38,7 +38,6 @@ const servicos = [
   { nome: "Cabelo", imagem: "../img/carrosel/corte-cabelo.jpg" },
   { nome: "Pezinho", imagem: "../img/carrosel/pezinho.jpg" }
 ];
-
 let indiceAtual = 0;
 
 const cortes = document.querySelector(".cortes");
