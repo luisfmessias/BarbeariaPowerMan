@@ -815,15 +815,6 @@ SECTION GALERIA
         font-size: 12px;
     }
 
-    .galeria-grid img[alt="Estilo 2"],
-    .galeria-grid img[alt="Estilo 6"],
-    .galeria-grid img[alt="Estilo 1"],
-    .galeria-grid img[alt="Estilo 4"] {
-        display: none;
-        max-height: 200px;
-
-    }
-
     .galeria-grid {
         grid-template-columns: 1fr;
         gap: 20px;
